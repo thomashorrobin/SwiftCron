@@ -30,6 +30,6 @@ struct StringValidator {
         #endif
 
         let regex = try! Regex(pattern: regex, options: [])
-        return regex.numberOfMatches(in: value, options: [], range: NSMakeRange(0, value.characters.count)) > 0
+        return regex.numberOfMatches(in: value, options: [], range: NSMakeRange(0, value.count)) > 0
     }
 }

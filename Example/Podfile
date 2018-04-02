@@ -6,6 +6,7 @@ end
 
 target 'SwiftCronExampleTests' do
 pod 'SwiftCron', :path => '../'
+pod 'SwiftLint'
 end
 
 pre_install do |installer|

@@ -15,7 +15,9 @@ class CronExpressionTests: XCTestCase {
 
     func testCreatingCronExpressionWithInvalidValueReturnsNil() {
         let invalidDay = "!@# $%^"
-        let cronExpression = CronExpression(minute: "4", hour: "3", day: invalidDay, month: "1", weekday: "2", year: "2016")
+        let cronExpression = CronExpression(minute: "4", hour: "3",
+                                            day: invalidDay, month: "1",
+                                            weekday: "2", year: "2016")
 
         XCTAssertNil(cronExpression)
     }

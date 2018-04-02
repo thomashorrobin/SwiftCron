@@ -37,7 +37,7 @@ class HourTests: XCTestCase {
 	}
 
     func testEverySecondAndEveryFourthHourOfDay() {
-        let dateToTestFrom = TestData.may15_2016
+        let dateToTestFrom = TestData.may15Of2016
 
         let everySecondAndFourthHourOfDayCron = CronExpression(minute: "0", hour: "2,4")!
 

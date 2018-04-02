@@ -36,7 +36,7 @@ class SwiftCronTests: XCTestCase {
 			let cron = CronExpression(cronString: "32 4 8 12 3 *")
 			var runDate: Date?
 
-			runDate = cron?.getNextRunDate(TestData.jan1_2017)
+			runDate = cron?.getNextRunDate(TestData.janFirst2017)
 			XCTAssertNotNil(runDate)
 		})
 

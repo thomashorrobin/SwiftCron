@@ -12,10 +12,6 @@ A cron expression parser that can take a cron string and give you the next run d
 Podfile:
 
 ```ruby
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.0'
-use_frameworks!
-
 pod 'SwiftCron'
 ```
 
@@ -34,6 +30,12 @@ Package.swift:
 ```
 .Package(url: "https://github.com/TheCodedSelf/SwiftCron.git", majorVersion: 0)
 ```
+
+## Requirements
+
+- iOS 9.0 or greater
+- Xcode 8.0 or greater
+- Swift 3 or greater
 
 Usage
 --------
@@ -87,8 +89,3 @@ let nextRunDate = myCronExpression.getNextRunDate(dateToStartSearchOn)
 - Pull requests for bug fixes and new features are most welcome.
 - Pull requests will only be merged once the Travis CI build passes.
 
-## Requirements
-
-- iOS 9.0 or greater
-- Xcode 8.0 or greater
-- Swift 3 or greater

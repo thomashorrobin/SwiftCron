@@ -51,7 +51,7 @@ let anotherExpression = CronExpression(minute: "30", hour: "11", day: "9", month
 ```
 ```swift
 // Every tuesday at 6:00pm
-let everyTuesday = CronExpression(minute: "0", hour: "18", weekday: "3")
+let everyTuesday = CronExpression(minute: "0", hour: "18", weekday: "2")
 ```
 
 <br/>

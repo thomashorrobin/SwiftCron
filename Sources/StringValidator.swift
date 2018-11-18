@@ -29,7 +29,7 @@ struct StringValidator {
             typealias Regex = NSRegularExpression
         #endif
 
-        let regex = try! Regex(pattern: regex, options: [])
+        guard let regex = try? Regex(pattern: regex, options: []) else { return false }
         return regex.numberOfMatches(in: value, options: [], range: NSMakeRange(0, value.count)) > 0
     }
 }

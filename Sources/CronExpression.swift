@@ -37,10 +37,10 @@ public class CronExpression {
 		cronRepresentation = theCronRepresentation
 
 		let parts = cronRepresentation.cronParts
-		for i: Int in 0 ..< parts.count {
-			let field = CronField(rawValue: i)!
-			if field.getFieldChecker().validate(parts[i]) == false {
-				NSLog("\(#function): Invalid cron field value \(parts[i]) at position \(i)")
+		for index: Int in 0 ..< parts.count {
+			let field = CronField(rawValue: index)!
+			if field.getFieldChecker().validate(parts[index]) == false {
+				NSLog("\(#function): Invalid cron field value \(parts[index]) at position \(index)")
 				return nil
 			}
 		}

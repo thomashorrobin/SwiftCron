@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49801A5D26DC227700DC16DC /* SwiftCron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9577E8F71E7396D4007854EE /* SwiftCron.framework */; };
 		9577E8FC1E7396D4007854EE /* SwiftCron.h in Headers */ = {isa = PBXBuildFile; fileRef = 9577E8FA1E7396D4007854EE /* SwiftCron.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		959BFF701E739CFA00A788E2 /* CronDescriptionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959BFF5F1E739CFA00A788E2 /* CronDescriptionBuilder.swift */; };
 		959BFF711E739CFA00A788E2 /* CronExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959BFF601E739CFA00A788E2 /* CronExpression.swift */; };
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49801A5D26DC227700DC16DC /* SwiftCron.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
